@@ -1,0 +1,26 @@
+@use '../../styles/abstracts/variables';
+
+.techingStaff {
+    margin-top: variables.$margin-top;
+    padding: variables.$paddingDesktop;
+
+    h3 {
+        padding-top: 2rem;
+    }
+
+    background-color: variables.$color-secondary4;
+    color: variables.$text-color-secondary;
+
+    .techingStaff__card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        margin-top: variables.$margin-top;
+
+
+        .techingStaff__card__item {
+            flex: calc(100%/3 - 40px);
+        }
+    }
+
+}

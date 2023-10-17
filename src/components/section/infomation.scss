@@ -1,0 +1,24 @@
+@use '../../styles/abstracts/variables' as *;
+
+.infomationCourse {
+    padding: $paddingDesktop;
+
+    &__contentCourse {
+        margin-top: $margin-top;
+
+        &__layout {
+            display: flex;
+            margin-top: $margin-top;
+
+            &__img {
+                flex: 40%;
+            }
+
+            &__text {
+                flex: 60%;
+                padding: 2rem;
+                line-height: 1.5em;
+            }
+        }
+    }
+}

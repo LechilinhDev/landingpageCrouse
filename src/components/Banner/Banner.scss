@@ -1,0 +1,29 @@
+@use '../../styles/abstracts/variables' as *;
+
+.banner {
+    display: flex;
+    padding: $paddingDesktop;
+
+    &__picture,
+    &__content {
+        width: 100%;
+        flex: 50%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3rem;
+
+        ul {
+            list-style: circle !important;
+            list-style-position: inside !important;
+
+        }
+
+        .btn {
+            width: 50%;
+        }
+    }
+}

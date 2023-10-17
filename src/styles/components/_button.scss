@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 1.5rem 4rem;
+        border: none;
+        background-color: $color-button;
+        color: $text-color-primary;
+        border-radius: 1rem;
+        display: inline-block;
+
+
+    }
+
+}

@@ -1,0 +1,49 @@
+@use '../../styles/abstracts/mixins';
+@use '../../styles/abstracts/variables';
+
+.topbar {
+    display: flex;
+    height: 3.5rem;
+    padding: variables.$paddingDesktop;
+    // background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: variables.$margin-top;
+
+    .logo {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .nav-banner {
+        display: flex;
+
+
+        @include mixins.respond(big-desktop) {
+            &__mobie {
+                display: none;
+            }
+        }
+
+        @include mixins.respond(tab-port) {
+            // display: none;
+
+            &__mobie {
+                display: block;
+            }
+        }
+
+        ul {
+            @include mixins.respond(tab-port) {
+                display: none;
+            }
+
+            display: flex;
+            align-items: center;
+
+            li {
+                padding: 0.75rem 0.75rem;
+            }
+        }
+    }
+}
